@@ -1,0 +1,90 @@
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">TELEHEALTH DEVICES</h1>
+            <p class="lead">Create new Telehealth devices into the database</p>
+          </div>
+        </div>
+
+
+        <h1>{{msg}}</h1>
+        <br>
+        <form class="clearfix mb-4" action="POST">
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="device-Id">Device ID</label>
+              <input type="text" class="form-control" id="device-Id">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="device-DisplayName">Device Name</label>
+              <input type="text" class="form-control" id="device-DisplayName">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-2">
+              <label for="device-Type">Device Type</label>
+              <select class="custom-select d-block w-100" id="device-Type">
+                <option value="">Choose...</option>
+                <option Value="Room">Room</option>
+                <option Value="Cart">Cart</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-2">
+              <label for="device-Facility">Facility</label>
+              <select class="custom-select d-block w-100" id="device-Facility">
+                <option value="">Choose...</option>
+                <option Value="AF">AF - American Fork Hospital</option>
+                <option Value="AV">AV - Alta View Hospital</option>
+                <option Value="DX">DX - Dixie Regional Medical Center</option>
+                <option Value="IM">IM - Intermountain Medical Center</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-2">
+              <label for="device-Unit">Unit</label>
+              <select class="custom-select d-block w-100" id="device-Unit">
+                <option value="">Choose...</option>
+                <option Value="ICU">ICU - Intensive care unit</option>
+                <option Value="MS">MS - Medical Surgery</option>
+                <option Value="IF">IF - Infusion Therapy</option>
+                <option Value="MO">MO - Medical Oncology</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="device-Sip">Device Sip</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="device-Sip">
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="deviceStatus">Device Name</label>
+              <select class="custom-select d-block w-100" id="device-Status">
+                <option value="">Choose...</option>
+                <option Value="true">Active</option>
+                <option Value="false">Inactive</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="device-note">Device Note:</label>
+            <textarea class="form-control" id="device-Notes" aria-describedby="device-Notes"
+              placeholder="Enter a note"></textarea>
+          </div>
+          <button id="submit" class="btn btn-primary float-right">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

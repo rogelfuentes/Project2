@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <title>Telehealth Devices</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">
+      <div class="logo-image"><img class="img-responsive2" src="/images/ihclogo.png"> | Telehealth Devices</div>
+    </a>
+    <input class="form-control form-control-dark w-50" id="searchBar" type="text" placeholder="Search for a device"
+      aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">
+              <div class="text-left">
+                <h5><span class="fa fa-tachometer"></span> Dashboard</h5>
+              </div>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/device/list">
+              <div class="text-left">
+                <h5><span class="fa fa-list"></span> Device List</h5>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/device/create">
+              <div class="text-left">
+                <h5><span class="fa fa-plus"></span> Create Device</h5>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="text-left">
+                <h5><span class="fa fa-thumb-tack"></span> Ping All Devices</h5>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="text-left">
+                <h5><span class="fa fa-address-book-o"></span> Contact List</h5>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="text-left">
+                <h5><span class="fa fa-pencil-square-o"></span> Update Contact</h5>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/api/devices">
+              <div class="text-left">
+                <h5><span class="fa fa-sitemap"></span> JSON File</h5>
+              </div>
+            </a>
+          </li>
+      </div>
+    </div>
+  </div>
+
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    </div>
+
+    {{{body}}}
+</body>
+
+</html>
