@@ -89,7 +89,7 @@ var handleFormSubmit = function(event) {
   }
 
   API.saveDevice(device).then(function() {
-    refreshDevices();
+    window.location.href="/device/list"
   });
   $deviceType.val("");
   $deviceDisplayName.val(""); 
@@ -110,7 +110,7 @@ var handleDeleteBtnClick = function() {
     .attr("data-id");
 
   API.deleteDevice(idToDelete).then(function() {
-    refreshDevices();
+    window.location.href="/device/list"
   });
 };
 
